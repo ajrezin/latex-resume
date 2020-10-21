@@ -47,7 +47,7 @@
   \hspace{-1.7em}\raggedleft{\parbox[c][3em][c]{13em}{\color{headings}\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
   \vspace{1em}
 }
-\titlespacing{\section}{0pt}{0pt}{5pt}
+\titlespacing{\section}{0pt}{0pt}{0pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -75,7 +75,7 @@
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{3pt}
-\newcommand{\note}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-LigIta}\fontsize{9pt}{10pt}\selectfont {#1}\normalfont}
+\newcommand{\note}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-LigIta}\fontsize{9pt}{10pt}\selectfont {#1 \\} \normalfont}
 
 % Positions command
 \newcommand{\position}[2]{	\color{subheadings}\raggedright\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1}\normalfont
