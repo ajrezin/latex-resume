@@ -47,7 +47,7 @@
   \hspace{-1.7em}\raggedleft{\parbox[c][3em][c]{13em}{\color{headings}\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
   \vspace{1em}
 }
-\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{0pt}{5pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -89,7 +89,7 @@
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{8pt}}
+\newcommand{\sectionsep}[0]{\vspace{6pt}}
 \newcommand{\smallsectionsep}[0]{\vspace{4pt}}
 
 % Bullet Lists with fewer gaps command
