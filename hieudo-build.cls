@@ -9,7 +9,7 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.35cm, vmargin=1cm]{geometry}
+\usepackage[hmargin=1.4cm, vmargin=1.25cm]{geometry}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
@@ -29,7 +29,7 @@
 
 % Set main fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Color=primary, Path = NiveauGrotesk/, Scale=1.01]{Niveau-Lig.otf}
+\setmainfont[Color=primary, Path = NiveauGrotesk/, Scale=1.02]{Niveau-Lig.otf}
 \newcommand{\custombold}[1]
 {\color{subheadings}\fontspec[Path = NiveauGrotesk/]{Niveau-ExtraLight.otf}\selectfont #1 \normalfont}
 \linespread{1.1}
@@ -41,31 +41,32 @@
 }
 
 % Name command
-\newcommand{\namesection}[2]{
-	\hspace{-1.7em}\raggedright{\parbox[t][3em][t]{25em}{\fontspec[Path = NiveauGrotesk/]{Niveau-Med}\fontsize{50pt}{0cm}\selectfont #1}}
+\newcommand{\namesection}[3]{
+	\hspace{-1.7em}\raggedright{\parbox[c][3em][c]{25em}{\vspace{-1em}\fontspec[Path = NiveauGrotesk/]{Niveau-Bol}\fontsize{50pt}{0cm}\selectfont #1}}
   \hfill
-  \hspace{-1.7em}\raggedleft{\parbox[c][3em][c]{13em}{\color{headings}\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
-  \vspace{1em}
+  \hspace{-1.7em}\raggedleft{\parbox[c][3em][c]{12em}{\color{headings}\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #2}}
+  \hspace{0em}\raggedleft{\parbox[c][3em][c]{13em}{\color{headings}\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{11pt}{14pt}\selectfont #3}}
+  \vspace{1.6em}
 }
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{18pt}{20pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = NiveauGrotesk/]{Niveau-Lig}\fontsize{22pt}{18pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
-\fontspec[Path = NiveauGrotesk/]{Niveau-Med}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
+\fontspec[Path = NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries}{}{0em}{}
 \titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
 \titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
 \newcommand{\runsubsection}[1]{\color{subheadings}
-\fontspec[Path = NiveauGrotesk/]{Niveau-Med}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
+\fontspec[Path = NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{5pt}
 
 % Jobtitle command
 \newcommand{\workplace}[2]{
 \color{subheadings}\raggedright
-\fontspec[Path = NiveauGrotesk/]{Niveau-Med}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont
+\fontspec[Path = NiveauGrotesk/]{Niveau-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries {#1} \normalfont
 \hfill
 \color{subheadings}\raggedleft
 \fontspec[Path = NiveauGrotesk/]{Niveau-Reg}\fontsize{12pt}{12pt}\selectfont\bfseries {#2} \normalfont
@@ -84,12 +85,12 @@
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Location command
-\newcommand{\location}[1]{\color{primary}\raggedright\fontspec[Path = NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{12pt}\selectfont {#1\\} \normalfont}
+\newcommand{\location}[1]{\color{primary}\raggedright\fontspec[Path = NiveauGrotesk/]{Niveau-Reg}\fontsize{11pt}{13pt}\selectfont {#1\\} \normalfont}
 \titlespacing{\section}{0pt}{0pt}{3pt}
 
 % Section seperators command
-\newcommand{\sectionsep}[0]{\vspace{6pt}}
-\newcommand{\smallsectionsep}[0]{\vspace{4pt}}
+\newcommand{\sectionsep}[0]{\vspace{10pt}}
+\newcommand{\smallsectionsep}[0]{\vspace{3pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
